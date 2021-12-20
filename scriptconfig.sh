@@ -27,10 +27,10 @@ if [ $Choice == 1 ]; then
     for i in ${User[@]}; do
     echo $i >> ~/.gitconfig
     done
+    echo " " >> ~/.gitconfig
     echo "[core]" >> ~/.gitconfig
     for i in ${Core[@]}; do
     echo $i >> ~/.gitconfig
-    echo " " >> ~/.gitconfig
     done
 break
 elif [ $Choice == 2 ]; then
@@ -44,6 +44,7 @@ elif [ $Choice == 2 ]; then
     for i in ${Newuser[@]}; do
     echo $i >> ~/.gitconfig
     done
+    echo " " >> ~/.gitconfig
     echo "[core]" >> ~/.gitconfig
     for i in ${Newcore[@]}; do
     echo $i >> ~/.gitconfig
